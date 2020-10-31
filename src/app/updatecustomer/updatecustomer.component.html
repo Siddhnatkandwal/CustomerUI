@@ -1,0 +1,14 @@
+<h3> Fill The Updated Credentials!!</h3>
+<div>
+    <label for="name">Name : </label>
+    <input type="text" id="name" [(ngModel)]="customer.name" class="form-control"/><br/>
+
+    <label for="number">Number : </label>
+    <input type="number" id="number" [(ngModel)]="customer.num" class="form-control"/><br/>
+
+    <label for="email">Email : </label>
+    <input type="text" id="email" [(ngModel)]="customer.email" class="form-control"/><br/>
+
+    <button (click)="updateCustomer()" class="btn btn-success">UPDATE</button>
+
+</div>

@@ -1,0 +1,24 @@
+<h3 style="text-align: center; background-color: cyan; font-weight: bold;">All Customers</h3>
+<div>
+    <table class="table table-hover table-border">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>NUMBER</th>
+                <th>EMAIL</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let cus of allCustomer">
+                <td>{{cus.id}}</td>
+                <td>{{cus.name}}</td>
+                <td>{{cus.num}}</td>
+                <td>{{cus.email}}</td>
+                <td><button (click)="deleteCustomer(cus.id)" class="btn btn-danger">DELETE</button>
+                    <a routerLink="/update/{{cus.id}}" class="btn btn-info">UPDATE</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
